@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dax Patel · Senior Software Engineer</title>
+  <meta name="description" content="Dax Patel, Senior Software Engineer at Walmart Global Tech. Backend systems, high-throughput orchestration, microservices and cloud.">
+  <meta property="og:title" content="Dax Patel · Senior Software Engineer">
+  <meta property="og:description" content="I build the systems that answer millions of requests before you notice them.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Dax Patel, home"><span class="brand-dot" aria-hidden="true"></span>dax.patel</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#trace">Career</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#extras">Beyond code</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="kbd-btn" id="open-palette" type="button" aria-haspopup="dialog" aria-controls="palette">
+        <span>Jump to</span><kbd>⌘K</kbd>
+      </button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO: the orchestrator -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="orchestra" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Senior Software Engineer (IN-4) · Walmart Global Tech</p>
+        <h1 id="hero-title">
+          <span class="line">I build the systems that</span>
+          <span class="line">answer <span class="grad">millions of requests</span></span>
+          <span class="line">before you notice them.</span>
+        </h1>
+        <p class="lede">Backend engineer specialising in high-throughput, low-latency orchestration for eCommerce and SaaS. Currently on Walmart's Tier-0 item experience, ex-Tekion, DA-IICT.</p>
+        <div class="cta">
+          <a class="btn primary" href="#trace">See the career trace</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/daxpatel1105" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> ↗</a>
+        </div>
+        <p class="hint" aria-hidden="true">Every packet above is a request, routed through 40+ tiers. That's the day job.</p>
+      </div>
+      <dl class="stats" aria-label="Highlights">
+        <div><dt>Resource tiers orchestrated</dt><dd data-count="40" data-suffix="+">40+</dd></div>
+        <div><dt>Engineers &amp; interns mentored</dt><dd data-count="11" data-suffix="+">11+</dd></div>
+        <div><dt>Years building backends</dt><dd data-count="5" data-suffix="+">5+</dd></div>
+        <div><dt>Service tier I work on</dt><dd>Tier&nbsp;0</dd></div>
+      </dl>
+    </section>
+
+    <!-- ABOUT: bento -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-head">
+        <p class="kicker">01 · About</p>
+        <h2 id="about-title">Performance is a feature. Reliability is the product.</h2>
+      </div>
+      <div class="bento">
+        <article class="tile tall reveal">
+          <h3>Who I am</h3>
+          <p>I've spent my career on the backend, in the parts of a system where latency budgets are tight and failure isn't an option. At Walmart Global Tech I lead initiatives that make high-traffic systems faster and cheaper to run, working with cross-functional teams on major projects.</p>
+          <p>Before that, at Tekion, I built scalable services for automotive dealerships across geographies: optimising microservices, streamlining workflows and cutting infrastructure costs.</p>
+        </article>
+        <article class="tile accent reveal">
+          <p class="big">40+</p>
+          <p>resource tiers unified by the Item Read Orchestrator into a single source of item data for Search &amp; Browse, Ads, Item Page and more.</p>
+        </article>
+        <article class="tile reveal">
+          <h3>What I'm known for</h3>
+          <ul class="ticks">
+            <li>Microservice architecture at scale</li>
+            <li>Cost-saving infra optimisation</li>
+            <li>Leading projects end to end</li>
+            <li>Mentoring 11+ juniors &amp; interns</li>
+          </ul>
+        </article>
+        <article class="tile wide reveal">
+          <h3>Recognised for</h3>
+          <div class="awards">
+            <span>Employee of the Month</span><span>Awesome Team</span><span>Go The Extra Mile</span><span>Special Achievement Award</span>
+          </div>
+        </article>
+        <article class="tile reveal">
+          <h3>Speaks</h3>
+          <p class="langs">English · Hindi · Gujarati</p>
+          <h3>Based in</h3>
+          <p>Bengaluru, India</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAREER as a distributed trace -->
+    <section id="trace" class="section" aria-labelledby="trace-title">
+      <div class="section-head">
+        <p class="kicker">02 · Career</p>
+        <h2 id="trace-title">My career, rendered as a distributed trace.</h2>
+        <p class="sub">Each span is a role. Select one to inspect it.</p>
+      </div>
+      <div class="trace reveal" role="group" aria-label="Career trace">
+        <div class="trace-axis" aria-hidden="true">
+          <span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+        </div>
+        <div class="trace-rows" id="trace-rows"><!-- rendered by app.js --></div>
+      </div>
+      <article class="span-detail reveal" id="span-detail" aria-live="polite"></article>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section" aria-labelledby="stack-title">
+      <div class="section-head">
+        <p class="kicker">03 · Stack</p>
+        <h2 id="stack-title">Tools I reach for when it has to scale.</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card reveal"><h3>Languages &amp; frameworks</h3><ul class="chips"><li>Java</li><li>Reactive Java</li><li>Spring Boot</li><li>Spring Framework</li><li>Node.js</li><li>Unity3D</li></ul></div>
+        <div class="stack-card reveal"><h3>Data &amp; messaging</h3><ul class="chips"><li>Cassandra</li><li>MongoDB</li><li>Elasticsearch</li><li>Redis</li><li>Memcache</li><li>Kafka</li><li>Oracle</li><li>SQL</li></ul></div>
+        <div class="stack-card reveal"><h3>Cloud &amp; platform</h3><ul class="chips"><li>Docker</li><li>Kubernetes</li><li>Cloud managed services</li><li>Microservices</li><li>Maven</li><li>Gradle</li></ul></div>
+        <div class="stack-card reveal"><h3>Observability</h3><ul class="chips"><li>Splunk</li><li>Grafana</li><li>Kibana</li><li>APM</li><li>Sumo Logic</li></ul></div>
+        <div class="stack-card reveal"><h3>Practices</h3><ul class="chips"><li>Test-driven development</li><li>System design</li><li>Performance tuning</li><li>Agile</li></ul></div>
+      </div>
+    </section>
+
+    <!-- EXTRAS -->
+    <section id="extras" class="section" aria-labelledby="extras-title">
+      <div class="section-head">
+        <p class="kicker">04 · Beyond code</p>
+        <h2 id="extras-title">Learning, research and leading people.</h2>
+      </div>
+      <div class="extras">
+        <div class="extra-col reveal">
+          <h3>Education</h3>
+          <ol class="list">
+            <li><strong>DA-IICT</strong><span>B.Tech, Information &amp; Communication Technology · 2017–2021</span></li>
+            <li><strong>Solaris Public School</strong><span>HSC · 2015–2017</span></li>
+            <li><strong>Maharaja Agrasen Vidyalaya</strong><span>SSC, CBSE</span></li>
+          </ol>
+        </div>
+        <div class="extra-col reveal">
+          <h3>Certifications</h3>
+          <ul class="list">
+            <li><strong>Advanced SQL for Query Tuning &amp; Performance Optimization</strong></li>
+            <li><strong>Node.js: Microservices</strong></li>
+            <li><strong>Spring: Framework in Depth</strong></li>
+            <li><strong>Advanced Java Programming</strong></li>
+            <li><strong>Machine Learning Summer School</strong><span>DA-IICT</span></li>
+          </ul>
+        </div>
+        <div class="extra-col reveal">
+          <h3>Research</h3>
+          <p class="paper">“Comparative study of Double Gate and Silicon-on-Insulator MOSFET by varying device parameters”</p>
+          <h3>Leadership</h3>
+          <ul class="list">
+            <li><strong>Lead Coordinator</strong><span>Mega Event Rampage · Synapse ’19</span></li>
+            <li><strong>Lead Coordinator</strong><span>i-Rubble · I-Fest ’18</span></li>
+            <li><strong>Organiser</strong><span>Youth Run</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <p class="kicker">05 · Contact</p>
+      <h2 id="contact-title">Let's build something that <span class="grad">doesn't fall over.</span></h2>
+      <div class="cta center">
+        <a class="btn primary" href="mailto:daxpatel11051999@gmail.com">daxpatel11051999@gmail.com</a>
+        <button class="btn ghost" type="button" id="copy-email" data-email="daxpatel11051999@gmail.com">Copy email</button>
+        <a class="btn ghost" href="https://www.linkedin.com/in/daxpatel1105" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> ↗</a>
+      </div>
+      <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dax Patel · Built by hand with plain HTML, CSS and JS. No frameworks were harmed.</p>
+  </footer>
+
+  <!-- Command palette -->
+  <div class="palette-backdrop" id="palette" role="dialog" aria-modal="true" aria-labelledby="palette-label" hidden>
+    <div class="palette">
+      <label id="palette-label" for="palette-input" class="sr-only">Jump to a section</label>
+      <input id="palette-input" type="text" placeholder="Jump to… (try “career”, “email”, “theme”)" autocomplete="off"
+             role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list">
+      <ul id="palette-list" role="listbox" aria-label="Commands"></ul>
+      <p class="palette-foot"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>Enter</kbd> to go · <kbd>Esc</kbd> to close</p>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
