@@ -8,25 +8,42 @@
 
   /* ── Data (from LinkedIn profile) ─────────────────────────────────────── */
   const ORGS = {
-    walmart: {
-      name: "Walmart Global Tech India", meta: "Jan 2024 – Present · Bengaluru",
-      roles: ["Senior Software Engineer (IN-4) · Oct 2025 – Present", "SDE-3 · Jan 2024 – Sep 2025"],
+    sams: {
+      name: "Sam's Club CRM & Marketing Technology · Walmart Global Tech", meta: "Oct 2025 – Present · Bengaluru",
+      roles: ["Senior Software Engineer (IN-4) · Oct 2025 – Present"],
       points: [
-        "<strong>Walmart eCommerce, Customer Experience (IRO):</strong> part of a Tier-0 service team.",
-        "<strong>Item Read Orchestrator:</strong> a high-throughput, low-latency orchestration layer integrating 40+ resource tiers into a single source of item data for Search &amp; Browse, CXO, Ads, Item Page and more.",
-        "<strong>Glass:</strong> serves real-time availability, pricing and shipping data powering item page, search and browse.",
-        "<strong>IRO Cache:</strong> a lightweight API serving high-throughput consumers like Ads, carousels and personalisation.",
+        "<strong>Enterprise Martech QA Agent:</strong> built an AI-assisted pre-launch quality gate for Sam's Club and Walmart email and push campaigns, covering content, brand safety, links, landing pages, tracking, accessibility and rendering.",
+        "<strong>Email QA:</strong> hydrates personalised email content, validates links and landing-page relevance, and checks inbox rendering across major clients, devices and dark mode.",
+        "<strong>Push QA:</strong> validates Android and iOS payloads, deep links, attribution, images and notification presentation for Airship and Braze campaigns.",
+        "<strong>Gradial agentic AI:</strong> built MCP submission and status tools with skill instructions to follow accepted jobs without resubmitting them.",
+        "<strong>Walmart Global Tech Hackathon 2026:</strong> participated in the five-person MarketMirror team, pitching synthetic audience feedback to support pre-launch campaign iteration. Prediction accuracy and business lift remain unvalidated.",
+        "<strong>Campaign Monitoring Agent (in progress):</strong> designing read-only post-schedule monitoring that verifies whether campaigns actually send and reports reach and performance through Slack and email.",
       ],
-      stack: "Java · Reactive Java · Spring Boot · Cassandra · Memcache · Splunk · Grafana · Maven · Microservices",
+      stack: "Python · FastAPI · MCP · Agentic AI · LLM &amp; vision models · React · Playwright · Braze · Airship · Salesforce Marketing Cloud",
+    },
+    walmart: {
+      name: "Walmart eCommerce · Walmart Global Tech", meta: "Jan 2024 – Sep 2025 · Bengaluru",
+      roles: ["SDE-3 · Jan 2024 – Sep 2025"],
+      points: [
+        "<strong>Item Read Orchestrator (Tier-0):</strong> 400K+ TPS orchestration layer integrating 40+ resource tiers into one source of item data for Search &amp; Browse, CXO, Ads and Item Page, including real-time availability, pricing and shipping.",
+        "<strong>SSR-CSR initiative:</strong> led end to end, from traffic estimation to integration and deployment, using CDN Early Hints: <strong>$117M SEO gains</strong> and <strong>$55M</strong> in page-load improvements.",
+        "<strong>Multi-offer and major appliances:</strong> delivered fastest and cheapest secondary offers (<strong>$75–80M</strong> projected) and critical item page, cart and all-sellers flows (<strong>$48M GMV</strong>).",
+        "<strong>Pre-owned marketplace:</strong> offer store, add-on services and condition mapping, plus a shared cache integration library: <strong>+20% seller NPS, +75% WFS penetration</strong>.",
+        "<strong>Performance and cost:</strong> led cache enablement saving <strong>$129K a year</strong>; cut JVM start-up time by <strong>75%</strong> and saved 8 developer hours per release.",
+        "<strong>Reliability and architecture:</strong> built rate-limiting metrics for Black Friday and Cyber Monday peaks, and helped refactor a monolith into domain microservices with gRPC and Protobuf.",
+        "<strong>Delivery:</strong> contributed to 5+ major initiatives and 4+ RTBs; promoted to IN-4.",
+      ],
+      stack: "Java · Reactive Java · Spring Boot · gRPC · Protobuf · Cassandra · Memcache · CDN · Splunk · Grafana · Microservices",
     },
     tekion: {
       name: "Tekion Corp", meta: "Mar 2022 – Jan 2024 · Bengaluru",
       roles: ["Software Engineer · Jul 2023 – Jan 2024", "Associate Software Engineer · Mar 2022 – Jul 2023"],
       points: [
-        "Backend engineer across <strong>Core, Platform and CRM</strong> domains of an automotive Dealer Management System used by thousands of dealerships.",
-        "Spearheaded <strong>Time &amp; Attendance 2.0</strong> and the centralisation of <strong>Vehicle Ownership</strong>.",
-        "Drove CRM advancements for dealerships and OEM integrations across geographies, including advanced appointment management, dashboards and multilingual capabilities.",
-        "Recognised for significant <strong>cost reduction</strong>; awards: Awesome Team, Go The Extra Mile, Employee of the Month.",
+        "<strong>Scale:</strong> owned and scaled 5+ microservices handling <strong>60K+ TPM</strong> across <strong>3,000+ dealerships</strong>, supporting workflows behind <strong>$120M+ ARR</strong>.",
+        "<strong>Time &amp; Attendance 2.0:</strong> built a configurable system for 3,000+ dealerships across geographies.",
+        "<strong>Vehicle Ownership:</strong> centralised vehicle-association history for <strong>2M+ users</strong>.",
+        "<strong>CRM platform:</strong> Contact One View (CMS + CRM global search), advanced appointments for dealers and OEMs, enterprise leadership dashboards, standalone CRM and multilingual support.",
+        "<strong>Growth:</strong> earned a promotion and contributed to infrastructure cost reduction.",
       ],
       stack: "Java · Spring Boot · MongoDB · Elasticsearch · Kafka · Redis · Kibana · APM · Sumo Logic · Maven · Gradle",
     },
@@ -36,20 +53,20 @@
       points: [
         "<strong>AR Banking:</strong> built a wealth-management and core-banking augmented-reality app with AR Foundation, Unity3D and third-party APIs, resulting in 3+ new deal contracts.",
         "<strong>Internal web:</strong> full-stack developer on internal tools for measuring performance metrics.",
-        "Innovator in the rapid-labs cohort; earlier worked on a <strong>core banking transformation</strong> project using Agile.",
+        "Innovator in the rapid-labs cohort; as an intern, built onboarding apps for a core-banking client using Agile.",
       ],
       stack: "Unity3D · AR Foundation · Full-stack web · Agile",
     },
   };
   const SPANS = [
-    { org: "walmart", role: "Senior SWE (IN-4)", start: "2025-10", end: null, c: "--accent" },
+    { org: "sams", role: "Senior SWE (IN-4)", start: "2025-10", end: null, c: "--accent-4" },
     { org: "walmart", role: "SDE-3", start: "2024-01", end: "2025-09", c: "--accent" },
     { org: "tekion", role: "Software Engineer", start: "2023-07", end: "2024-01", c: "--accent-2" },
     { org: "tekion", role: "Associate SWE", start: "2022-03", end: "2023-07", c: "--accent-2" },
     { org: "tcs", role: "SWE · Research Labs", start: "2021-05", end: "2022-03", c: "--accent-3" },
     { org: "tcs", role: "Software Engineer", start: "2021-03", end: "2021-05", c: "--accent-3" },
   ];
-  const ORG_SHORT = { walmart: "walmart", tekion: "tekion", tcs: "tcs" };
+  const ORG_SHORT = { sams: "sam's crm", walmart: "walmart", tekion: "tekion", tcs: "tcs" };
 
   /* ── Career trace ─────────────────────────────────────────────────────── */
   const T0 = new Date("2021-01-01"), T1 = new Date("2027-01-01");
@@ -78,7 +95,7 @@
       row.querySelector(".trace-track").append(btn);
       rows.append(row);
     });
-    select("walmart", $(".span-btn"));
+    select("sams", $(".span-btn"));
   }
 
   function select(orgKey, btn) {
@@ -203,12 +220,13 @@
     const counters = new IntersectionObserver((entries) => entries.forEach((e) => {
       if (!e.isIntersecting) return;
       counters.unobserve(e.target);
-      const el = e.target, target = +el.dataset.count, suffix = el.dataset.suffix || "";
+      const el = e.target, target = +el.dataset.count;
+      const prefix = el.dataset.prefix || "", suffix = el.dataset.suffix || "";
       if (reduceMotion) return;
       const t0 = performance.now();
       const tick = (t) => {
         const k = Math.min((t - t0) / 1200, 1), eased = 1 - Math.pow(1 - k, 3);
-        el.textContent = Math.round(target * eased) + suffix;
+        el.textContent = prefix + Math.round(target * eased) + suffix;
         if (k < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
@@ -263,7 +281,9 @@
     const root = $("#palette"), input = $("#palette-input"), list = $("#palette-list");
     const go = (id) => () => $(id).scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
     const commands = [
+      { label: "Impact by career phase", hint: "section", run: go("#impact") },
       { label: "About", hint: "section", run: go("#about") },
+      { label: "Featured work", hint: "section", run: go("#work") },
       { label: "Career trace", hint: "section", run: go("#trace") },
       { label: "Stack", hint: "section", run: go("#stack") },
       { label: "Education & certifications", hint: "section", run: go("#extras") },

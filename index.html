@@ -3,19 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dax Patel · Senior Software Engineer</title>
-  <meta name="description" content="Dax Patel, Senior Software Engineer at Walmart Global Tech. Backend systems, high-throughput orchestration, microservices and cloud.">
+  <title>Dax Patel · Senior Software Engineer · Backend, Distributed Systems &amp; AI</title>
+  <meta name="description" content="Dax Patel, Senior Software Engineer (IN-4) at Walmart Global Tech. Java, Spring Boot, microservices and distributed systems at 400K+ TPS; AI-assisted marketing QA for Sam's Club CRM. Bengaluru, India.">
   <meta property="og:title" content="Dax Patel · Senior Software Engineer">
-  <meta property="og:description" content="I build the systems that answer millions of requests before you notice them.">
+  <meta property="og:description" content="Backend engineer behind Tier-0 Walmart eCommerce systems at 400K+ TPS and AI-assisted campaign QA for Sam's Club.">
+  <meta property="og:type" content="profile">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Dax Patel","jobTitle":"Senior Software Engineer",
+   "worksFor":{"@type":"Organization","name":"Walmart Global Tech"},
+   "alumniOf":{"@type":"CollegeOrUniversity","name":"Dhirubhai Ambani Institute of Information and Communication Technology"},
+   "address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},
+   "email":"mailto:daxpatel11051999@gmail.com","sameAs":["https://www.linkedin.com/in/daxpatel1105"],
+   "knowsAbout":["Java","Spring Boot","Microservices","Distributed Systems","System Design","Kafka","Cassandra","gRPC","Kubernetes","Python","LLM applications"]}
+  </script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="welcome.css">
+  <script src="welcome.js" defer></script>
 </head>
 <body>
+  <dialog class="welcome" id="welcome" aria-label="Welcome to Dax Patel's portfolio">
+    <div class="welcome-content">
+      <p class="welcome-signature">DAX PATEL <span aria-hidden="true">/</span> PORTFOLIO</p>
+      <div class="welcome-word" aria-hidden="true"><span id="welcome-word" lang="en">Hello.</span></div>
+      <p class="welcome-caption" aria-hidden="true">Different languages. One warm welcome.</p>
+    </div>
+    <button class="welcome-skip" id="welcome-skip" type="button" autofocus>Skip intro <span aria-hidden="true">↗</span></button>
+  </dialog>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="nav" id="top">
     <a class="brand" href="#top" aria-label="Dax Patel, home"><span class="brand-dot" aria-hidden="true"></span>dax.patel</a>
     <nav aria-label="Primary">
       <ul>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#trace">Career</a></li>
         <li><a href="#stack">Stack</a></li>
@@ -38,59 +59,217 @@
     <section class="hero" aria-labelledby="hero-title">
       <canvas id="orchestra" aria-hidden="true"></canvas>
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Senior Software Engineer (IN-4) · Walmart Global Tech</p>
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Senior Software Engineer (IN-4) · Sam's Club CRM · Walmart Global Tech</p>
         <h1 id="hero-title">
           <span class="line">I build the systems that</span>
           <span class="line">answer <span class="grad">millions of requests</span></span>
           <span class="line">before you notice them.</span>
         </h1>
-        <p class="lede">Backend engineer specialising in high-throughput, low-latency orchestration for eCommerce and SaaS. Currently on Walmart's Tier-0 item experience, ex-Tekion, DA-IICT.</p>
+        <p class="lede">Senior Software Engineer building distributed systems and AI-assisted marketing tools at Walmart Global Tech. My work spans Java services, performance optimisation and MCP integrations. Previously Tekion. DA-IICT graduate. Based in Bengaluru.</p>
         <div class="cta">
-          <a class="btn primary" href="#trace">See the career trace</a>
+          <a class="btn primary" href="#impact">See the impact</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/daxpatel1105" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> ↗</a>
         </div>
-        <p class="hint" aria-hidden="true">Every packet above is a request, routed through 40+ tiers. That's the day job.</p>
+        <p class="hint" aria-hidden="true">Every packet above is a request, routed through many systems. From eCommerce traffic to campaign QA, that's the craft.</p>
       </div>
-      <dl class="stats" aria-label="Highlights">
-        <div><dt>Resource tiers orchestrated</dt><dd data-count="40" data-suffix="+">40+</dd></div>
-        <div><dt>Engineers &amp; interns mentored</dt><dd data-count="11" data-suffix="+">11+</dd></div>
-        <div><dt>Years building backends</dt><dd data-count="5" data-suffix="+">5+</dd></div>
-        <div><dt>Service tier I work on</dt><dd>Tier&nbsp;0</dd></div>
-      </dl>
+      <ul class="pillars" aria-label="What I bring">
+        <li><span class="pillar-icon" aria-hidden="true"></span><div><strong>Tier-0 scale</strong><span>High-throughput, low-latency Java services for Walmart eCommerce</span></div></li>
+        <li><span class="pillar-icon" aria-hidden="true"></span><div><strong>Applied AI engineering</strong><span>Combining deterministic checks, LLM analysis and MCP integrations</span></div></li>
+        <li><span class="pillar-icon" aria-hidden="true"></span><div><strong>Initiative ownership</strong><span>From traffic estimates and contracts to rollout and on-call</span></div></li>
+        <li><span class="pillar-icon" aria-hidden="true"></span><div><strong>Raises the team</strong><span>Mentored 11+ engineers and interns alongside hands-on delivery</span></div></li>
+      </ul>
     </section>
 
+    <!-- IMPACT: career phases -->
+    <section id="impact" class="section" aria-labelledby="impact-title">
+      <div class="section-head">
+        <p class="kicker">01 · Impact</p>
+        <h2 id="impact-title">Every phase of my career, measured in outcomes.</h2>
+        <p class="sub">Selected work across each role. Business figures are initiative-level outcomes reported in my resume, not revenue attributable to one engineer; projected benefits are marked separately.</p>
+      </div>
+
+      <ol class="phases">
+        <li class="phase reveal" style="--pc: var(--accent-4)">
+          <div class="phase-rail" aria-hidden="true"><span class="phase-dot"></span></div>
+          <div class="phase-body">
+            <header class="phase-head">
+              <p class="phase-when">Oct 2025 – now · Phase 4</p>
+              <h3>Sam's Club CRM · Agentic AI for marketing</h3>
+              <p class="phase-role">Senior Software Engineer (IN-4) · Walmart Global Tech</p>
+              <p class="phase-theme">From backend scale to AI that marketers trust.</p>
+            </header>
+            <ul class="phase-wins">
+              <li><b>Gradial agentic AI</b><span>Built MCP tools that let Gradial's campaign agents submit QA, track the job and return marketer-ready reports for email and push.</span></li>
+              <li><b>Enterprise Martech QA Agent</b><span>An AI quality gate combining rules, LLM and vision checks across content, links, landing pages, tracking, accessibility and inbox rendering.</span></li>
+              <li><b>Walmart + Sam's coverage</b><span>One platform covering both brands across Braze, Airship and Salesforce Marketing Cloud.</span></li>
+              <li><b>Campaign Monitoring Agent · In progress</b><span>Building read-only push monitoring; live performance telemetry and notification delivery still need validation.</span></li>
+            </ul>
+            <div class="phase-recognition">
+              <h4>Recognition and Awards</h4>
+              <div class="awards" aria-label="Sam's Martech awards"><span>Excellence Award · Sam's Martech</span></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="phase reveal" style="--pc: var(--accent)">
+          <div class="phase-rail" aria-hidden="true"><span class="phase-dot"></span></div>
+          <div class="phase-body">
+            <header class="phase-head">
+              <p class="phase-when">Jan 2024 – Sep 2025 · Phase 3</p>
+              <h3>Walmart eCommerce · Tier-0 item experience</h3>
+              <p class="phase-role">SDE-3 · Walmart Global Tech</p>
+              <p class="phase-theme">Owning initiatives on one of the busiest services at Walmart.</p>
+            </header>
+            <div class="phase-metrics">
+              <div><b>$117M</b><span>SEO gains + $55M page-load, SSR-CSR with CDN Early Hints</span></div>
+              <div><b>$75–80M</b><span>projected benefit, multi-offer</span></div>
+              <div><b>$48M</b><span>GMV, major appliances</span></div>
+              <div><b>400K+</b><span>TPS across the orchestrator</span></div>
+            </div>
+            <ul class="phase-wins compact">
+              <li><b>75% faster start-up</b><span>JVM warm-up rework; 8 developer hours saved per release.</span></li>
+              <li><b>+75% WFS · +20% seller NPS</b><span>Shared cache library for the pre-owned marketplace.</span></li>
+              <li><b>$129K a year saved</b><span>Led cache enablement to cut resource use.</span></li>
+              <li><b>Production ownership</b><span>Delivered business initiatives, supported holiday traffic peaks and resolved production incidents.</span></li>
+            </ul>
+            <div class="phase-recognition">
+              <h4>Recognition and Awards</h4>
+              <div class="awards" aria-label="Walmart eCommerce awards"><span>Bravo Award ×2 · Employee of the Quarter · Team of 40+</span></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="phase reveal" style="--pc: var(--accent-2)">
+          <div class="phase-rail" aria-hidden="true"><span class="phase-dot"></span></div>
+          <div class="phase-body">
+            <header class="phase-head">
+              <p class="phase-when">Mar 2022 – Jan 2024 · Phase 2</p>
+              <h3>Tekion · SaaS platform &amp; CRM</h3>
+              <p class="phase-role">Associate SWE → Software Engineer</p>
+              <p class="phase-theme">Owning services end to end for a fast-growing SaaS product.</p>
+            </header>
+            <div class="phase-metrics">
+              <div><b>$120M+</b><span>ARR supported by services I owned</span></div>
+              <div><b>3,000+</b><span>dealerships served</span></div>
+              <div><b>60K+</b><span>TPM across 5+ microservices</span></div>
+              <div><b>2M+</b><span>users on Vehicle Ownership</span></div>
+            </div>
+            <ul class="phase-wins compact">
+              <li><b>Time &amp; Attendance 2.0</b><span>Configurable for every dealership and geography.</span></li>
+              <li><b>CRM platform</b><span>Unified search, advanced appointments, leadership dashboards, multilingual.</span></li>
+            </ul>
+            <div class="phase-recognition">
+              <h4>Recognition and Awards</h4>
+              <div class="awards" aria-label="Tekion recognition"><span>Employee of the Quarter</span><span>Employee of the Month</span><span>Awesome Team Award</span><span>Go The Extra Mile Award</span><span>5-star performance rating</span></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="phase reveal" style="--pc: var(--accent-3)">
+          <div class="phase-rail" aria-hidden="true"><span class="phase-dot"></span></div>
+          <div class="phase-body">
+            <header class="phase-head">
+              <p class="phase-when">Mar 2021 – Mar 2022 · Phase 1</p>
+              <h3>TCS Digital · BFSI Research Labs</h3>
+              <p class="phase-role">Software Engineer</p>
+              <p class="phase-theme">Shipping innovation that won real deals.</p>
+            </header>
+            <ul class="phase-wins compact">
+              <li><b>3+ new deal contracts</b><span>From an AR banking app built with Unity3D and AR Foundation.</span></li>
+            </ul>
+            <div class="phase-recognition">
+              <h4>Recognition and Awards</h4>
+              <div class="awards" aria-label="TCS awards"><span>Special Achievement Award · TCS Global Open Finance Challenge</span></div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="kicker">02 · Featured work</p>
+        <h2 id="work-title">Agentic AI that ships, and ideas worth building.</h2>
+        <p class="sub">Selected engineering decisions and my contribution. Hackathon concepts are distinguished from deployed systems.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card featured reveal">
+          <p class="work-tag">Gradial · Agentic AI</p>
+          <h3>QA built into AI campaign agents</h3>
+          <p>Gradial's agents assemble email and push campaigns. I built MCP submission and status tools so agents can request QA, follow the same job and return its report.</p>
+          <details class="case-study">
+            <summary>Engineering decisions &amp; ownership</summary>
+            <dl>
+              <dt>Problem</dt><dd>Campaign-authoring agents need validated inputs and dependable access to long-running QA results.</dd>
+              <dt>My contribution</dt><dd>MCP tools, channel-specific skill instructions, job-status tracking and report integration for Walmart and Sam's Club workflows.</dd>
+              <dt>Design choice</dt><dd>Separate submission from status polling. Skill instructions tell the agent not to resubmit accepted jobs; this is not a claim of transport-level exactly-once delivery.</dd>
+              <dt>Evidence</dt><dd>Implemented submit/status workflows and regression coverage. Internal source and campaign data are not published here.</dd>
+            </dl>
+          </details>
+          <ul class="chips"><li>MCP</li><li>Agent tools</li><li>Python</li><li>FastAPI</li></ul>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-tag">Enterprise Martech QA Agent</p>
+          <h3>AI quality gate for email and push</h3>
+          <p>Rules, LLM and vision checks across copy, brand safety, links, landing pages, tracking, accessibility and rendering, turned into plain-language fixes.</p>
+          <details class="case-study">
+            <summary>How I make AI findings trustworthy</summary>
+            <dl>
+              <dt>Approach</dt><dd>Use deterministic validation for structured rules and model-assisted analysis for contextual checks.</dd>
+              <dt>Failure handling</dt><dd>Distinguish unavailable checks from passed checks; preserve evidence and test known failure cases rather than treating job completion as QA success.</dd>
+              <dt>My contribution</dt><dd>Backend validation, MCP integration, report presentation and regression tests across email and push workflows.</dd>
+            </dl>
+          </details>
+        </article>
+        <article class="work-card reveal">
+          <p class="work-tag">Email + Push QA</p>
+          <h3>Personalised, multi-device confidence</h3>
+          <p>Hydrated email checks with inbox rendering and dark mode, plus Android and iOS push checks for deep links, attribution and imagery.</p>
+        </article>
+        <article class="work-card hack reveal">
+          <p class="work-tag">Walmart Global Tech Hackathon 2026</p>
+          <h3>MarketMirror: test campaigns on AI customers first</h3>
+          <p>A team hackathon concept for synthetic audience reactions to campaign drafts: cohort-level open and click estimates, unsubscribe-risk signals and qualitative feedback. Intended to inform campaign iteration, not replace real-world experiments.</p>
+          <p class="hack-team">Hackathon concept · Team of 5 · Sam's Club · 2026</p>
+          <details class="case-study">
+            <summary>Scope &amp; evidence</summary>
+            <p>Participated in the five-person MarketMirror team. The pitch proposes synthetic personas derived from member behaviour. Prediction accuracy, access to production member data and business lift are not established by the pitch; no validated uplift or award is claimed here.</p>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    
     <!-- ABOUT: bento -->
     <section id="about" class="section" aria-labelledby="about-title">
       <div class="section-head">
-        <p class="kicker">01 · About</p>
+        <p class="kicker">03 · About</p>
         <h2 id="about-title">Performance is a feature. Reliability is the product.</h2>
       </div>
       <div class="bento">
         <article class="tile tall reveal">
           <h3>Who I am</h3>
-          <p>I've spent my career on the backend, in the parts of a system where latency budgets are tight and failure isn't an option. At Walmart Global Tech I lead initiatives that make high-traffic systems faster and cheaper to run, working with cross-functional teams on major projects.</p>
-          <p>Before that, at Tekion, I built scalable services for automotive dealerships across geographies: optimising microservices, streamlining workflows and cutting infrastructure costs.</p>
+          <p>I build backend systems where scale, correctness and business confidence matter. I now work on Sam's Club CRM & Marketing Technology, creating AI-assisted tools that help marketers find campaign issues before customers do.</p>
+          <p>Previously at Walmart eCommerce, I worked on Tier-0 item experience systems serving 400K+ TPS, leading initiatives worth tens of millions in GMV and SEO gains, and helping break a monolith into gRPC microservices.</p>
+          <p>Before that, at Tekion, I built and scaled CRM and platform services for 3,000+ automotive dealerships and 2M+ users.</p>
         </article>
         <article class="tile accent reveal">
-          <p class="big">40+</p>
-          <p>resource tiers unified by the Item Read Orchestrator into a single source of item data for Search &amp; Browse, Ads, Item Page and more.</p>
+          <p class="big">400K+</p>
+          <p>TPS across Walmart's Item Read Orchestrator, a Tier-0 layer unifying 40+ resource tiers for Search &amp; Browse, Ads, Item Page and more.</p>
         </article>
         <article class="tile reveal">
           <h3>What I'm known for</h3>
           <ul class="ticks">
-            <li>Microservice architecture at scale</li>
-            <li>Cost-saving infra optimisation</li>
-            <li>Leading projects end to end</li>
-            <li>Mentoring 11+ juniors &amp; interns</li>
+            <li>Building applied AI workflows</li>
+            <li>Leading initiatives end to end</li>
+            <li>Microservices &amp; system design at scale</li>
+            <li>Performance and cost optimisation</li>
+            <li>Production delivery &amp; operational ownership</li>
+            <li>Mentoring 11+ engineers &amp; interns</li>
           </ul>
         </article>
         <article class="tile wide reveal">
-          <h3>Recognised for</h3>
-          <div class="awards">
-            <span>Employee of the Month</span><span>Awesome Team</span><span>Go The Extra Mile</span><span>Special Achievement Award</span>
-          </div>
-        </article>
-        <article class="tile reveal">
           <h3>Speaks</h3>
           <p class="langs">English · Hindi · Gujarati</p>
           <h3>Based in</h3>
@@ -102,7 +281,7 @@
     <!-- CAREER as a distributed trace -->
     <section id="trace" class="section" aria-labelledby="trace-title">
       <div class="section-head">
-        <p class="kicker">02 · Career</p>
+        <p class="kicker">04 · Career</p>
         <h2 id="trace-title">My career, rendered as a distributed trace.</h2>
         <p class="sub">Each span is a role. Select one to inspect it.</p>
       </div>
@@ -118,22 +297,23 @@
     <!-- STACK -->
     <section id="stack" class="section" aria-labelledby="stack-title">
       <div class="section-head">
-        <p class="kicker">03 · Stack</p>
+        <p class="kicker">05 · Stack</p>
         <h2 id="stack-title">Tools I reach for when it has to scale.</h2>
       </div>
       <div class="stack-grid">
-        <div class="stack-card reveal"><h3>Languages &amp; frameworks</h3><ul class="chips"><li>Java</li><li>Reactive Java</li><li>Spring Boot</li><li>Spring Framework</li><li>Node.js</li><li>Unity3D</li></ul></div>
-        <div class="stack-card reveal"><h3>Data &amp; messaging</h3><ul class="chips"><li>Cassandra</li><li>MongoDB</li><li>Elasticsearch</li><li>Redis</li><li>Memcache</li><li>Kafka</li><li>Oracle</li><li>SQL</li></ul></div>
-        <div class="stack-card reveal"><h3>Cloud &amp; platform</h3><ul class="chips"><li>Docker</li><li>Kubernetes</li><li>Cloud managed services</li><li>Microservices</li><li>Maven</li><li>Gradle</li></ul></div>
-        <div class="stack-card reveal"><h3>Observability</h3><ul class="chips"><li>Splunk</li><li>Grafana</li><li>Kibana</li><li>APM</li><li>Sumo Logic</li></ul></div>
-        <div class="stack-card reveal"><h3>Practices</h3><ul class="chips"><li>Test-driven development</li><li>System design</li><li>Performance tuning</li><li>Agile</li></ul></div>
+        <div class="stack-card reveal"><h3>Languages &amp; frameworks</h3><ul class="chips"><li>Java</li><li>Reactive Java</li><li>Python</li><li>C++</li><li>JavaScript</li><li>Spring Boot</li><li>FastAPI</li><li>gRPC</li><li>Protobuf</li><li>REST</li><li>React</li><li>Node.js</li></ul></div>
+        <div class="stack-card reveal"><h3>AI &amp; martech</h3><ul class="chips"><li>Agentic AI</li><li>MCP</li><li>Synthetic audiences</li><li>LLM evaluation</li><li>Vision models</li><li>Cursor</li><li>GitHub Copilot</li><li>Braze</li><li>Airship</li><li>Salesforce Marketing Cloud</li><li>Gradial</li></ul></div>
+        <div class="stack-card reveal"><h3>Data &amp; messaging</h3><ul class="chips"><li>Cassandra</li><li>MongoDB</li><li>DynamoDB</li><li>PostgreSQL</li><li>Elasticsearch</li><li>Redis</li><li>Memcache</li><li>Kafka</li><li>Oracle</li></ul></div>
+        <div class="stack-card reveal"><h3>Cloud &amp; platform</h3><ul class="chips"><li>AWS</li><li>Azure</li><li>Docker</li><li>Kubernetes</li><li>Microservices</li><li>Maven</li><li>Gradle</li></ul></div>
+        <div class="stack-card reveal"><h3>Observability</h3><ul class="chips"><li>Splunk</li><li>Grafana</li><li>Prometheus</li><li>Kibana</li><li>APM</li><li>OpenObserve</li><li>Sumo Logic</li></ul></div>
+        <div class="stack-card reveal"><h3>Practices</h3><ul class="chips"><li>System design</li><li>Distributed systems</li><li>Data structures &amp; algorithms</li><li>Test-driven development</li><li>Rate limiting</li><li>Caching</li><li>Performance tuning</li><li>Agile</li></ul></div>
       </div>
     </section>
 
     <!-- EXTRAS -->
     <section id="extras" class="section" aria-labelledby="extras-title">
       <div class="section-head">
-        <p class="kicker">04 · Beyond code</p>
+        <p class="kicker">06 · Beyond code</p>
         <h2 id="extras-title">Learning, research and leading people.</h2>
       </div>
       <div class="extras">
@@ -141,7 +321,7 @@
           <h3>Education</h3>
           <ol class="list">
             <li><strong>DA-IICT</strong><span>B.Tech, Information &amp; Communication Technology · 2017–2021</span></li>
-            <li><strong>Solaris Public School</strong><span>HSC · 2015–2017</span></li>
+            <li><strong>Solaris Public School</strong><span>HSC · 95.75% · 99.68 percentile · 2015–2017</span></li>
             <li><strong>Maharaja Agrasen Vidyalaya</strong><span>SSC, CBSE</span></li>
           </ol>
         </div>
@@ -170,7 +350,7 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section contact" aria-labelledby="contact-title">
-      <p class="kicker">05 · Contact</p>
+      <p class="kicker">07 · Contact</p>
       <h2 id="contact-title">Let's build something that <span class="grad">doesn't fall over.</span></h2>
       <div class="cta center">
         <a class="btn primary" href="mailto:daxpatel11051999@gmail.com">daxpatel11051999@gmail.com</a>
